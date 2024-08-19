@@ -38,6 +38,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Protocols\**" />
+    <EmbeddedResource Remove="Protocols\**" />
+    <None Remove="Protocols\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="DH.NModbus" Version="3.7.2024.819-beta0706" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0">
       <PrivateAssets>all</PrivateAssets>
@@ -47,10 +53,6 @@
 
   <ItemGroup>
     <Content Include="..\Doc\DH.png" Link="DH.png" PackagePath="\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Protocols\" />
   </ItemGroup>
 
 </Project>
